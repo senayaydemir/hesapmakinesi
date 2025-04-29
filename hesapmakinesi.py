@@ -24,4 +24,7 @@ if (sec=="1"):
  print( topla(int(say_a),int(say_b)))
 elif(sec=="2"):
   print( cikar(int(say_a),int(say_b)))
- 
+elif(sec=="3"):
+  print( carp(int(say_a),int(say_b)))
+elif(sec=="4"):
+  print( bol(int(say_a),int(say_b)))
