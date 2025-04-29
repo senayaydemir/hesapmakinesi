@@ -5,17 +5,21 @@ def cikar(a,b):
 def carp(a,b):
  return a*b
 def bol(a,b):
- return a/b
+ if 0 == int(b):
+  print("Sıfıra Bölünme Hatası")
+  return 0
+ else:
+  return a/b
 def usal(a,b):
- return a**b
+  return a**b
 while True:
  print("""
 Hesap Makinesi
       1. Toplama 
-      2. Çıkarm 
+      2. Çıkarma
       3. Çarpma
       4. Bölme
-      5.Üs Alma
+      5. Üs Alma
 
       
  """)
