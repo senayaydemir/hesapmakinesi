@@ -6,8 +6,10 @@ def carp(a,b):
  return a*b
 def bol(a,b):
  return a/b
-
-print("""
+def usal(a,b):
+ return a**b
+while True:
+ print("""
 Hesap Makinesi
       1. Toplama 
       2. Çıkarm 
@@ -16,15 +18,21 @@ Hesap Makinesi
       5.Üs Alma
 
       
-""")
-sec=input("Seçiminiz:")
-say_a=input("1.Sayı:")
-say_b=input("2.Sayı:")
-if (sec=="1"):
- print( topla(int(say_a),int(say_b)))
-elif(sec=="2"):
+ """)
+ sec=input("Seçiminiz:")
+ say_a=input("1.Sayı:")
+ say_b=input("2.Sayı:")
+ if (sec=="1"):
+  print( topla(int(say_a),int(say_b)))
+ elif(sec=="2"):
   print( cikar(int(say_a),int(say_b)))
-elif(sec=="3"):
+ elif(sec=="3"):
   print( carp(int(say_a),int(say_b)))
-elif(sec=="4"):
+ elif(sec=="4"):
   print( bol(int(say_a),int(say_b)))
+ elif(sec=="5"):
+  print( usal(int(say_a),int(say_b)))
+ else :
+  print("Geçersiz İşlem")
+  input("Devam etmek için ENTER")
+ 
